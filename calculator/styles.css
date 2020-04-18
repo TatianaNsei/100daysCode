@@ -1,0 +1,78 @@
+
+/*body {
+    background-color:#009688;
+  }*/
+#calc-contain{
+    background-color:#009688;
+    position: relative;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 0px auto;
+    padding: 20px 20px 80px 15px;
+  }
+  #name{
+    position: relative;
+    float: right;
+    margin-top: 15px;
+  }
+  #name p{
+    font-size: 20px;
+    font-weight: 900;
+  }
+  
+  input[type=button] {
+    background: lightGray;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 7px;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  input[type=button]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  input[type=button]:hover {
+    background-color: #003300;
+    color: white;
+  }
+  
+  input[type = text] {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 4px 0px 12px black inset;
+  }
+  .delete {
+    color: black;
+    float: left;
+    position: relative;
+    display: block;
+    background-color:#607D8B; 
+  }
+  
+  .delet:hover {
+    float: left;
+    position: relative;
+    display: block;
+    background-color:#9E9E9E; 
+  }
+
+  h1 {
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: ;
+    text-shadow: 1px 1px 1px #003300;
+}
+
+h1:hover {
+    font-size: 40px;
+}

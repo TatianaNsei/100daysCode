@@ -2,18 +2,21 @@
 const countdownArea = document.querySelector('.countdown');
 const numbersArea = document.querySelector('.numbers');
 const resetBtn = document.querySelector('.reset');
+const pomodoroBtn = document.querySelector('.pomodoro');
 
 // create an interval and counter
 let interval;
-
+let count = 0;
 
 // calculate the height of our numbers
 const height = countdownArea.getBoundingClientRect().height;
 
 // create the interval that creates the timer
 function createTimer() {
-    let count = 0;
-    interval = setInterval(() => {
+        clearInterval(interval);
+        count = 0;
+        numbersArea.style.transform = 'translateY(0)'
+        interval = setInterval(() => {
   
           // 1. increment our count
       count++;
@@ -36,12 +39,22 @@ function createTimer() {
 
   resetBtn.addEventListener('click', createTimer);
 
-//   function createTimer() {
-//     clearInterval(interval);
-//     count = 0;
-//     numbersArea.style.transform = 'translateY(0)'
+  //Pomodoro function
+  var seconds = 0;
+  var mins = 2;
+  function pomodoro(mins) {
+    var interval;
+    seconds= mins*60 || 0;     
+    interval = setInterval(function() {
   
-//       // other code goes here...
-//       // interval = setInterval(() => {...
-//   }
+         seconds--;
+         if(!seconds){
+              clearInterval(interval); 
+              alert("🚨 It is Cool 😎. I wish you could share ");
+         }
+    },1000)
+ }
 
+ pomodoro();
+
+ pomodoroBtn.addEventListener('click', pomodoro);

@@ -5,7 +5,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #3ca8de;
+    background-color: #4c758a;
 }
 /*button styles are here*/
 button {
@@ -26,6 +26,9 @@ button {
 
 button:hover {
   background: #eee;
+  background-color: #003300;
+  color: white;
+  
 }
 
 .countdown {
@@ -53,4 +56,12 @@ button:hover {
   font-size: 12px;
   padding: 8px 16px;
   margin: 100px auto 0;
+  float: left;
 }
+
+.pomodoro {
+    font-size: 12px;
+    padding: 8px 16px;
+    margin: 100px auto 0;
+    float: right;
+  }

@@ -40,21 +40,18 @@ function createTimer() {
   resetBtn.addEventListener('click', createTimer);
 
   //Pomodoro function
-  var seconds = 0;
-  var mins = 2;
-  function pomodoro(mins) {
-    var interval;
-    seconds= mins*60 || 0;     
+  function pomodoro() {
+    var interval; 
+    var seconds= 5;
     interval = setInterval(function() {
   
          seconds--;
          if(!seconds){
               clearInterval(interval); 
-              alert("🚨 It is Cool 😎. I wish you could share ");
+              alert("🚨 It is Cool 😎. Pomodoro try out is lovely ");
+              createTimer();
          }
     },1000)
  }
 
- pomodoro();
-
- pomodoroBtn.addEventListener('click', pomodoro);
+ pomodoroBtn.addEventListener('click', ()=>pomodoro());

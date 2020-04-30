@@ -1,3 +1,15 @@
+
+function userTime() {
+    var time = document.getElementById('usertime').value;
+    if (time >= 1) {
+        normal_time = parseInt(time);
+        return normal_time;
+    } else {
+        normalTime = 20;
+        return normalTtime;
+    }
+}
+
 const resetBtn = document.querySelector('.reset');
         var pomodoro = {
             started: false,
@@ -30,7 +42,7 @@ const resetBtn = document.querySelector('.reset');
                 this.fillerHeight = 0;
             },
             startWork: function () {
-                this.resetVariables(20, 0, true);
+                this.resetVariables(userTime(), 0, true);
             },
             
             toDoubleDigit: function (num) {

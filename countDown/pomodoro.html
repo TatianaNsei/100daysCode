@@ -7,11 +7,20 @@
 </head>
 
 <body>
+    
     <div>
         <button class="next">
             <span class="icon">👉</span>
-            NEXT EPISODE STARTS IN
+            POMODORO STARTS IN
         </button>
+
+        <div style="width:800px; margin:0 auto;">
+            <div class="usertime">
+                <form>
+                    <label for="usertime">Enter your time</label><br>
+                    <input type="number" id="usertime" name="usertime" value=""><br>
+                </form>
+            </div>
         <div id="pomodoro-app">
             <div id="container">
                 <div id="timer">
@@ -24,7 +33,7 @@
                 </div>
                 <div id="buttons">
                         <button id="work">Start Pmd</button>
-                        <button id="counter" onclick="window.location.href = 'countdown.html';">Simple countdown</button>
+                        <button id="counter" onclick="window.location.href = 'countdown.html';">Reset</button>
                         
                         
                 </div>

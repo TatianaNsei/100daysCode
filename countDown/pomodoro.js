@@ -2,11 +2,11 @@
 function userTime() {
     var time = document.getElementById('usertime').value;
     if (time >= 1) {
-        normal_time = parseInt(time);
-        return normal_time;
+        normalTime = parseInt(time);
+        return normalTime;
     } else {
         normalTime = 20;
-        return normalTtime;
+        return normalTime;
     }
 }
 

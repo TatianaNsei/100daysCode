@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my click</title>
+    <link rel="stylesheet" href="./buttonclick.css">
+</head>
+
+<body>
+    <h1>Click Button Multicolour</h1>
+    <button id="button" onclick="myFunction">Click Me!</button>
+
+    <script>
+        document.getElementById("button").innerHTML = "YOU CLICKED ME!";
+
+          var colors = ["blue", "green", "gray", "yellow", "black", "red", "pink", "white"],
+             index = 0;                                 
+
+             document.getElementById("button").onclick = function () {
+            document.body.style.background = colors[index];  
+            index = (index + 1) % colors.length;        
+        }
+        
+        </script>
+</body>
+
+</html>

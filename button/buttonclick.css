@@ -1,6 +1,11 @@
 h1 {
     text-align: center
 }
+
+body{
+    background-color: rgba(156, 206, 248, 0.39);
+}
+
 .center {
     display: flex;
     justify-content: center;

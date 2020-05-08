@@ -28,3 +28,15 @@ body{
 #button:hover {
     background-color: green;
   }
+  #crazy {
+    background-color: yellowgreen;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+#button:crazy {
+    background-color: yellow;
+  }

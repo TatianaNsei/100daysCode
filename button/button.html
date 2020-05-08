@@ -12,18 +12,28 @@
     <h1>Click Button Multicolour</h1>
     <div class= "center">
         <button id="button" onclick="myFunction">Click Me!</button>
+        <button id="crazy" onclick="crazyFunction">Go crazy</button>
     </div>
+    
     <script>
           var colors = ["blue", "green", "gray", "yellow", "black", "red", "pink", "white"],
              index = 0;                 
-                           
-             document.getElementById("button").onclick = function () {
-            document.body.style.background = colors[index];  
-            index = (index + 1) % colors.length;     
-            //alert('I was clicked')   
+
+             function changeColor() {
+            document.body.style.background = colors[index];
+            index= (index + 1) % colors.length;  
+             }
+
+            document.getElementById("button").onclick = function () {
+            document.body.style.background = changeColor() 
             document.getElementById("button").innerHTML = "YOU CLICKED ME!"; 
-        }
+            }
         
+            document.getElementById("crazy").onclick = function () {
+            document.body.style.background = changeColor()
+            setInterval(changeColor, 2000);
+            document.getElementById("crazy").innerHTML = "Going Crazy!";
+            }
         </script>
 </body>
 

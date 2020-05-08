@@ -7,3 +7,5 @@ Projects realised include
 - Simple Calculator
 - Count down Timer
 - Pomodoro count down method
+- Click Button multicolor
+- Automatic colorchange button
